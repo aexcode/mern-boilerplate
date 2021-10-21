@@ -1,21 +1,21 @@
-// Dependencies
+// dependencies
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
 const app = express()
 require('dotenv').config()
 
-// Database configuration
+// database configuration
 require('./config/database')
 
-// Middleware
+// middleware
 app.use(express.json())
 
-// App listener
+// app listener
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log(`server is listening on port: ${PORT}`))
 
-// Production setup
+// production setup
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.resolve(__dirname, '../client/build')))
 

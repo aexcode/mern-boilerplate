@@ -7,7 +7,7 @@ Live Demo: [aexcode-mern-boilerplate.herokuapp.com](https://aexcode-mern-boilerp
 A basic MERN stack, monorepo boilerplate, preconfigured for deployment to Heroku. This template can be hosted on Heroku's free tier or any of the paid plans. 
 
 ## Tech
-MongoDB | Espress | React | NodeJS | Heroku
+MongoDB | Espress | React | NodeJS
 
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en)
@@ -38,9 +38,9 @@ The client directory was generated using a minimal Create React App template.
 ### Dependencies
 The project utilizes the following the following dependencies:
 - [dotenv](https://www.npmjs.com/package/dotenv) to protect environment variables
-- [Express](https://www.npmjs.com/package/Express) as the backend framework
+- [express](https://www.npmjs.com/package/Express) as the backend framework
 - [mongoose](https://www.npmjs.com/package/mongoose) to connect to the MongoDB database
-- [create React app](https://create-React-app.dev) as the frontend framework
+- [create react app](https://create-React-app.dev) as the frontend framework
 
 The project utilizes the following dev dependencies:
 - [nodemon](https://www.npmjs.com/package/nodemon) to automatically restart the development server
@@ -57,7 +57,7 @@ The project contains the following scripts which can be run from the root direct
 The project also contains a postbuild script for heroku called `heroku-postbuild`. If deployed to Heroku, Heroku will run this script prior to deploying or re-deploying your application.
 
 ### The Proxy
-The client contains a proxy to manipulate any API requests made from the client to appear as though the request were made from the server itself. This prevents any Cross-Origin Resource Sharing (CORS) issues.
+The client contains a proxy in the package.json file to manipulate any API requests made from the client to appear as though the request were made from the server itself. This prevents any Cross-Origin Resource Sharing (CORS) issues.
 
 ## Deploying to Heroku
 Resources:
@@ -76,7 +76,7 @@ This template is preconfigured for deployment. It can be deployed without any ch
 - Click "Reveal Config Vars"
 - Add `MONGODB_URI` to the input labeled "KEY"
 - Add your MongoDB connection string to the input labeled "VALUE" 
-- Click "Add" the environment variable to heroku
+- Click "Add" to add the environment variable to heroku
 - Navigate to the "Deploy" tab
 - Scroll down to "Deployment Method"
 - Select "Github: Connect to Github" to toggle the CLI / Github steps
